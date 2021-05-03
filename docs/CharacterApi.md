@@ -15,7 +15,6 @@ Method | HTTP request | Description
 [**get_characters_character_id_portrait**](CharacterApi.md#get_characters_character_id_portrait) | **GET** /v2/characters/{character_id}/portrait/ | Get character portraits
 [**get_characters_character_id_roles**](CharacterApi.md#get_characters_character_id_roles) | **GET** /v2/characters/{character_id}/roles/ | Get character corporation roles
 [**get_characters_character_id_standings**](CharacterApi.md#get_characters_character_id_standings) | **GET** /v1/characters/{character_id}/standings/ | Get standings
-[**get_characters_character_id_stats**](CharacterApi.md#get_characters_character_id_stats) | **GET** /v2/characters/{character_id}/stats/ | Yearly aggregate stats
 [**get_characters_character_id_titles**](CharacterApi.md#get_characters_character_id_titles) | **GET** /v1/characters/{character_id}/titles/ | Get character corporation titles
 [**post_characters_affiliation**](CharacterApi.md#post_characters_affiliation) | **POST** /v1/characters/affiliation/ | Character affiliation
 [**post_characters_character_id_cspa**](CharacterApi.md#post_characters_character_id_cspa) | **POST** /v4/characters/{character_id}/cspa/ | Calculate a CSPA charge cost
@@ -480,7 +479,7 @@ Name | Type | Description  | Notes
 
 Get character portraits
 
-Get portrait urls for a character  ---  This route expires daily at 11:05  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/characters/{character_id}/portrait/)
+Get portrait urls for a character  ---  This route expires daily at 11:05
 
 ### Example
 ```python
@@ -643,64 +642,6 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-# **get_characters_character_id_stats**
-> list[GetCharactersCharacterIdStats200Ok] get_characters_character_id_stats(character_id, datasource=datasource, if_none_match=if_none_match, token=token)
-
-Yearly aggregate stats
-
-Returns aggregate yearly stats for a character  ---  This route is cached for up to 86400 seconds
-
-### Example
-```python
-from __future__ import print_function
-import time
-import eve_api
-from eve_api.rest import ApiException
-from pprint import pprint
-
-# Configure OAuth2 access token for authorization: evesso
-configuration = eve_api.Configuration()
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
-# create an instance of the API class
-api_instance = eve_api.CharacterApi(eve_api.ApiClient(configuration))
-character_id = 56 # int | An EVE character ID
-datasource = 'tranquility' # str | The server name you would like data from (optional) (default to tranquility)
-if_none_match = 'if_none_match_example' # str | ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
-token = 'token_example' # str | Access token to use if unable to set a header (optional)
-
-try:
-    # Yearly aggregate stats
-    api_response = api_instance.get_characters_character_id_stats(character_id, datasource=datasource, if_none_match=if_none_match, token=token)
-    pprint(api_response)
-except ApiException as e:
-    print("Exception when calling CharacterApi->get_characters_character_id_stats: %s\n" % e)
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **character_id** | **int**| An EVE character ID | 
- **datasource** | **str**| The server name you would like data from | [optional] [default to tranquility]
- **if_none_match** | **str**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
- **token** | **str**| Access token to use if unable to set a header | [optional] 
-
-### Return type
-
-[**list[GetCharactersCharacterIdStats200Ok]**](GetCharactersCharacterIdStats200Ok.md)
-
-### Authorization
-
-[evesso](../README.md#evesso)
-
-### HTTP request headers
-
- - **Content-Type**: application/json
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
 # **get_characters_character_id_titles**
 > list[GetCharactersCharacterIdTitles200Ok] get_characters_character_id_titles(character_id, datasource=datasource, if_none_match=if_none_match, token=token)
 
@@ -764,7 +705,7 @@ Name | Type | Description  | Notes
 
 Character affiliation
 
-Bulk lookup of character IDs to corporation, alliance and faction  ---  This route is cached for up to 3600 seconds
+Bulk lookup of character IDs to corporation, alliance and faction  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#POST-/characters/affiliation/)
 
 ### Example
 ```python
@@ -814,7 +755,7 @@ No authorization required
 
 Calculate a CSPA charge cost
 
-Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost  --- 
+Takes a source character ID in the url and a set of target character ID's in the body, returns a CSPA charge cost  ---
 
 ### Example
 ```python

@@ -329,10 +329,10 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the API class
 api_instance = eve_api.FleetsApi(eve_api.ApiClient(configuration))
 fleet_id = 789 # int | ID for a fleet
-accept_language = 'en-us' # str | Language to use in the response (optional) (default to en-us)
+accept_language = 'en' # str | Language to use in the response (optional) (default to en)
 datasource = 'tranquility' # str | The server name you would like data from (optional) (default to tranquility)
 if_none_match = 'if_none_match_example' # str | ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
-language = 'en-us' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en-us)
+language = 'en' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en)
 token = 'token_example' # str | Access token to use if unable to set a header (optional)
 
 try:
@@ -348,10 +348,10 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet | 
- **accept_language** | **str**| Language to use in the response | [optional] [default to en-us]
+ **accept_language** | **str**| Language to use in the response | [optional] [default to en]
  **datasource** | **str**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **str**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
- **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en]
  **token** | **str**| Access token to use if unable to set a header | [optional] 
 
 ### Return type
@@ -391,10 +391,10 @@ configuration.access_token = 'YOUR_ACCESS_TOKEN'
 # create an instance of the API class
 api_instance = eve_api.FleetsApi(eve_api.ApiClient(configuration))
 fleet_id = 789 # int | ID for a fleet
-accept_language = 'en-us' # str | Language to use in the response (optional) (default to en-us)
+accept_language = 'en' # str | Language to use in the response (optional) (default to en)
 datasource = 'tranquility' # str | The server name you would like data from (optional) (default to tranquility)
 if_none_match = 'if_none_match_example' # str | ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
-language = 'en-us' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en-us)
+language = 'en' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en)
 token = 'token_example' # str | Access token to use if unable to set a header (optional)
 
 try:
@@ -410,10 +410,10 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **fleet_id** | **int**| ID for a fleet | 
- **accept_language** | **str**| Language to use in the response | [optional] [default to en-us]
+ **accept_language** | **str**| Language to use in the response | [optional] [default to en]
  **datasource** | **str**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **str**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
- **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en]
  **token** | **str**| Access token to use if unable to set a header | [optional] 
 
 ### Return type

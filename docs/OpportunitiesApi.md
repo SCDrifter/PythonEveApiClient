@@ -137,10 +137,10 @@ from pprint import pprint
 # create an instance of the API class
 api_instance = eve_api.OpportunitiesApi()
 group_id = 56 # int | ID of an opportunities group
-accept_language = 'en-us' # str | Language to use in the response (optional) (default to en-us)
+accept_language = 'en' # str | Language to use in the response (optional) (default to en)
 datasource = 'tranquility' # str | The server name you would like data from (optional) (default to tranquility)
 if_none_match = 'if_none_match_example' # str | ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
-language = 'en-us' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en-us)
+language = 'en' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en)
 
 try:
     # Get opportunities group
@@ -155,10 +155,10 @@ except ApiException as e:
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **group_id** | **int**| ID of an opportunities group | 
- **accept_language** | **str**| Language to use in the response | [optional] [default to en-us]
+ **accept_language** | **str**| Language to use in the response | [optional] [default to en]
  **datasource** | **str**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **str**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
- **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en]
 
 ### Return type
 

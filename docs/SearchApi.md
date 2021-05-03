@@ -32,10 +32,10 @@ api_instance = eve_api.SearchApi(eve_api.ApiClient(configuration))
 categories = ['categories_example'] # list[str] | Type of entities to search for
 character_id = 56 # int | An EVE character ID
 search = 'search_example' # str | The string to search on
-accept_language = 'en-us' # str | Language to use in the response (optional) (default to en-us)
+accept_language = 'en' # str | Language to use in the response (optional) (default to en)
 datasource = 'tranquility' # str | The server name you would like data from (optional) (default to tranquility)
 if_none_match = 'if_none_match_example' # str | ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
-language = 'en-us' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en-us)
+language = 'en' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en)
 strict = false # bool | Whether the search should be a strict match (optional) (default to false)
 token = 'token_example' # str | Access token to use if unable to set a header (optional)
 
@@ -54,10 +54,10 @@ Name | Type | Description  | Notes
  **categories** | [**list[str]**](str.md)| Type of entities to search for | 
  **character_id** | **int**| An EVE character ID | 
  **search** | **str**| The string to search on | 
- **accept_language** | **str**| Language to use in the response | [optional] [default to en-us]
+ **accept_language** | **str**| Language to use in the response | [optional] [default to en]
  **datasource** | **str**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **str**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
- **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en]
  **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
  **token** | **str**| Access token to use if unable to set a header | [optional] 
 
@@ -95,10 +95,10 @@ from pprint import pprint
 api_instance = eve_api.SearchApi()
 categories = ['categories_example'] # list[str] | Type of entities to search for
 search = 'search_example' # str | The string to search on
-accept_language = 'en-us' # str | Language to use in the response (optional) (default to en-us)
+accept_language = 'en' # str | Language to use in the response (optional) (default to en)
 datasource = 'tranquility' # str | The server name you would like data from (optional) (default to tranquility)
 if_none_match = 'if_none_match_example' # str | ETag from a previous request. A 304 will be returned if this matches the current ETag (optional)
-language = 'en-us' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en-us)
+language = 'en' # str | Language to use in the response, takes precedence over Accept-Language (optional) (default to en)
 strict = false # bool | Whether the search should be a strict match (optional) (default to false)
 
 try:
@@ -115,10 +115,10 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **categories** | [**list[str]**](str.md)| Type of entities to search for | 
  **search** | **str**| The string to search on | 
- **accept_language** | **str**| Language to use in the response | [optional] [default to en-us]
+ **accept_language** | **str**| Language to use in the response | [optional] [default to en]
  **datasource** | **str**| The server name you would like data from | [optional] [default to tranquility]
  **if_none_match** | **str**| ETag from a previous request. A 304 will be returned if this matches the current ETag | [optional] 
- **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en-us]
+ **language** | **str**| Language to use in the response, takes precedence over Accept-Language | [optional] [default to en]
  **strict** | **bool**| Whether the search should be a strict match | [optional] [default to false]
 
 ### Return type
