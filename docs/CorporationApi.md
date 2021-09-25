@@ -33,7 +33,7 @@ Method | HTTP request | Description
 
 Get corporation information
 
-Public information about a corporation  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/)
+Public information about a corporation  ---  This route is cached for up to 3600 seconds
 
 ### Example
 ```python
@@ -85,7 +85,7 @@ No authorization required
 
 Get alliance history
 
-Get a list of all the alliances a corporation has been a member of  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/alliancehistory/)
+Get a list of all the alliances a corporation has been a member of  ---  This route is cached for up to 3600 seconds
 
 ### Example
 ```python
@@ -137,7 +137,7 @@ No authorization required
 
 Get corporation blueprints
 
-Returns a list of blueprints the corporation owns  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/blueprints/)
+Returns a list of blueprints the corporation owns  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 Get all corporation ALSC logs
 
-Returns logs recorded in the past seven days from all audit log secure containers (ALSC) owned by a given corporation  ---  This route is cached for up to 600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/containers/logs/)
+Returns logs recorded in the past seven days from all audit log secure containers (ALSC) owned by a given corporation  ---  This route is cached for up to 600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -257,7 +257,7 @@ Name | Type | Description  | Notes
 
 Get corporation divisions
 
-Return corporation hangar and wallet division names, only show if a division is not using the default name  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/divisions/)
+Return corporation hangar and wallet division names, only show if a division is not using the default name  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 
 Get corporation facilities
 
-Return a corporation's facilities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Factory_Manager  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/facilities/)
+Return a corporation's facilities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Factory_Manager
 
 ### Example
 ```python
@@ -373,7 +373,7 @@ Name | Type | Description  | Notes
 
 Get corporation icon
 
-Get the icon urls for a corporation  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/icons/)
+Get the icon urls for a corporation  ---  This route is cached for up to 3600 seconds
 
 ### Example
 ```python
@@ -425,7 +425,7 @@ No authorization required
 
 Get corporation medals
 
-Returns a corporation's medals  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/medals/)
+Returns a corporation's medals  ---  This route is cached for up to 3600 seconds
 
 ### Example
 ```python
@@ -485,7 +485,7 @@ Name | Type | Description  | Notes
 
 Get corporation issued medals
 
-Returns medals issued by a corporation  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/medals/issued/)
+Returns medals issued by a corporation  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -545,7 +545,7 @@ Name | Type | Description  | Notes
 
 Get corporation members
 
-Return the current member list of a corporation, the token's character need to be a member of the corporation.  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/members/)
+Return the current member list of a corporation, the token's character need to be a member of the corporation.  ---  This route is cached for up to 3600 seconds
 
 ### Example
 ```python
@@ -603,7 +603,7 @@ Name | Type | Description  | Notes
 
 Get corporation member limit
 
-Return a corporation's member limit, not including CEO himself  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/members/limit/)
+Return a corporation's member limit, not including CEO himself  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -661,7 +661,7 @@ Name | Type | Description  | Notes
 
 Get corporation's members' titles
 
-Returns a corporation's members' titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/members/titles/)
+Returns a corporation's members' titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -719,7 +719,7 @@ Name | Type | Description  | Notes
 
 Track corporation members
 
-Returns additional information about a corporation's members which helps tracking their activities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/membertracking/)
+Returns additional information about a corporation's members which helps tracking their activities  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -777,7 +777,7 @@ Name | Type | Description  | Notes
 
 Get corporation member roles
 
-Return the roles of all members if the character has the personnel manager role or any grantable role.  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/roles/)
+Return the roles of all members if the character has the personnel manager role or any grantable role.  ---  This route is cached for up to 3600 seconds
 
 ### Example
 ```python
@@ -835,7 +835,7 @@ Name | Type | Description  | Notes
 
 Get corporation member roles history
 
-Return how roles have changed for a coporation's members, up to a month  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/roles/history/)
+Return how roles have changed for a coporation's members, up to a month  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -955,7 +955,7 @@ Name | Type | Description  | Notes
 
 Get corporation standings
 
-Return corporation standings from agents, NPC corporations, and factions  ---  This route is cached for up to 3600 seconds  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/standings/)
+Return corporation standings from agents, NPC corporations, and factions  ---  This route is cached for up to 3600 seconds
 
 ### Example
 ```python
@@ -1015,7 +1015,7 @@ Name | Type | Description  | Notes
 
 Get corporation starbases (POSes)
 
-Returns list of corporation starbases (POSes)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/starbases/)
+Returns list of corporation starbases (POSes)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -1075,7 +1075,7 @@ Name | Type | Description  | Notes
 
 Get starbase (POS) detail
 
-Returns various settings and fuels of a starbase (POS)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/starbases/{starbase_id}/)
+Returns various settings and fuels of a starbase (POS)  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -1137,7 +1137,7 @@ Name | Type | Description  | Notes
 
 Get corporation structures
 
-Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Station_Manager  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/structures/)
+Get a list of corporation structures. This route's version includes the changes to structures detailed in this blog: https://www.eveonline.com/article/upwell-2.0-structures-changes-coming-on-february-13th  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Station_Manager
 
 ### Example
 ```python
@@ -1201,7 +1201,7 @@ Name | Type | Description  | Notes
 
 Get corporation titles
 
-Returns a corporation's titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/{corporation_id}/titles/)
+Returns a corporation's titles  ---  This route is cached for up to 3600 seconds  --- Requires one of the following EVE corporation role(s): Director
 
 ### Example
 ```python
@@ -1259,7 +1259,7 @@ Name | Type | Description  | Notes
 
 Get npc corporations
 
-Get a list of npc corporations  ---  This route expires daily at 11:05  --- [Diff of the upcoming changes](https://esi.evetech.net/diff/latest/dev/#GET-/corporations/npccorps/)
+Get a list of npc corporations  ---  This route expires daily at 11:05
 
 ### Example
 ```python
